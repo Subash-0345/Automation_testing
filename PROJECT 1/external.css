@@ -1,0 +1,44 @@
+html{
+    background-color: #5BAC14;
+}
+#white{
+    color: white;
+    background-color: #86D019;
+    margin-left: 350px;
+    height: 80px;
+    margin-top: 17px;
+    margin-right: 360px;
+    padding-top: 10px;
+    padding-left: 20px;
+}
+#id2{
+    background-color: white;
+    margin-left: 350px;
+    margin-right: 360px;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+#id3{
+    border-style: inset;
+}
+span{
+    font-size: 20px;
+}
+hr{
+        border:none;
+        border-top:1px dashed black;
+        color:#fff;
+        background-color:#fff;
+        height:1px;
+        margin-left: 2px;
+        margin-right: 15px;
+}
+.L{
+    border-style: inset;
+    
+}
+.fs{
+    font-size: 12px;
+    font-weight: bold;
+}
