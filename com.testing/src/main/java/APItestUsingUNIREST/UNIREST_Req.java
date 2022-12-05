@@ -43,9 +43,9 @@ public class UNIREST_Req {
 
 	public static void main(String[] args) throws UnirestException {
 		UNIREST_Req req = new UNIREST_Req();
-	//		req.Get_Unirest();
-	//		req.Post_Unirest();
-	//		req.Put_Unirest();
-	//		req.delete_unirest();
+			req.Get_Unirest();
+//			req.Post_Unirest();
+//			req.Put_Unirest();
+//			req.delete_unirest();
 	}
 }
