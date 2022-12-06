@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Test_Rest_Assured.PUT_PATCH_DELETE_RA">
+      <class name="Test_Rest_Assured.ValidationMatchers_RA">
         <methods>
-          <include name="PUTreqRA"/>
+          <include name="checkAge"/>
         </methods>
-      </class> <!-- Test_Rest_Assured.PUT_PATCH_DELETE_RA -->
+      </class> <!-- Test_Rest_Assured.ValidationMatchers_RA -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
