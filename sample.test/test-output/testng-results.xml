@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-12-06T20:20:32 IST" name="Default suite" finished-at="2022-12-06T20:20:47 IST" duration-ms="14644">
+    <groups>
+    </groups>
+    <test started-at="2022-12-06T20:20:32 IST" name="Default test" finished-at="2022-12-06T20:20:47 IST" duration-ms="14644">
+      <class name="TestTopics.dynamicPropertiesTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:TestTopics.dynamicPropertiesTest@8dbdac1]" started-at="2022-12-06T20:20:32 IST" name="setup" finished-at="2022-12-06T20:20:40 IST" duration-ms="8418" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testExcute()[pri:0, instance:TestTopics.dynamicPropertiesTest@8dbdac1]" started-at="2022-12-06T20:20:40 IST" name="testExcute" finished-at="2022-12-06T20:20:47 IST" duration-ms="6083" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testExcute -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:TestTopics.dynamicPropertiesTest@8dbdac1]" started-at="2022-12-06T20:20:47 IST" name="teardown" finished-at="2022-12-06T20:20:47 IST" duration-ms="121" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- TestTopics.dynamicPropertiesTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
