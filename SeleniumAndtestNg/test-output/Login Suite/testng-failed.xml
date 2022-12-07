@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Login Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="loginTest3(failed)">
+    <parameter name="password" value="demoadmin"/>
+    <parameter name="username" value="admin@gmail.com"/>
+    <classes>
+      <class name="Datadriven.CrtPassWord">
+        <methods>
+          <include name="crtPass" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- Datadriven.CrtPassWord -->
+    </classes>
+  </test> <!-- loginTest3(failed) -->
+</suite> <!-- Failed suite [Login Suite] -->
