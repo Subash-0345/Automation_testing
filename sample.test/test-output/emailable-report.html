@@ -9,16 +9,16 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">6</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">8,801</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">64,156</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">TestTopics.AssertsTopics</td><td><a href="#m0">testForHardAsserts</a></td><td rowspan="1">1670398829807</td><td rowspan="1">2064</td></tr><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="6">TestTopics.AssertsTopics</td><td><a href="#m1">test</a></td><td rowspan="1">1670398829745</td><td rowspan="1">12</td></tr><tr class="passedeven"><td><a href="#m2">testForFalse</a></td><td rowspan="1">1670398829775</td><td rowspan="1">17</td></tr><tr class="passedeven"><td><a href="#m3">testForNotEqual</a></td><td rowspan="1">1670398829760</td><td rowspan="1">5</td></tr><tr class="passedeven"><td><a href="#m4">testForNotNull</a></td><td rowspan="1">1670398829797</td><td rowspan="1">6</td></tr><tr class="passedeven"><td><a href="#m5">testForNull</a></td><td rowspan="1">1670398829794</td><td rowspan="1">1</td></tr><tr class="passedeven"><td><a href="#m6">testForTrue</a></td><td rowspan="1">1670398829766</td><td rowspan="1">6</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">TestTopics.FramesTest</td><td><a href="#m0">frames</a></td><td rowspan="1">1670422962059</td><td rowspan="1">60987</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">TestTopics.AssertsTopics#testForHardAsserts</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [null] but found [true]
-	at org.testng.Assert.fail(Assert.java:99)
-	at org.testng.Assert.failNotSame(Assert.java:1033)
-	at org.testng.Assert.assertNull(Assert.java:965)
-	at org.testng.Assert.assertNull(Assert.java:953)
-	at TestTopics.AssertsTopics.testForHardAsserts(AssertsTopics.java:87)
+<h2>Default test</h2><h3 id="m0">TestTopics.FramesTest#frames</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchFrameException: No frame element found by name or id packageFrame
+Build info: version: &apos;4.3.0&apos;, revision: &apos;a4995e2c09*&apos;
+System info: host: &apos;DESKTOP-1SGGTFE&apos;, ip: &apos;192.168.1.137&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.frame(RemoteWebDriver.java:1088)
+	at TestTopics.FramesTest.frames(FramesTest.java:43)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
@@ -46,11 +46,5 @@
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">TestTopics.AssertsTopics#test</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">TestTopics.AssertsTopics#testForFalse</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">TestTopics.AssertsTopics#testForNotEqual</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">TestTopics.AssertsTopics#testForNotNull</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">TestTopics.AssertsTopics#testForNull</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m6">TestTopics.AssertsTopics#testForTrue</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

@@ -1,52 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="7" passed="6" failed="1" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-12-07T13:10:23 IST" name="Default suite" finished-at="2022-12-07T13:10:32 IST" duration-ms="8801">
+  <suite started-at="2022-12-07T19:52:39 IST" name="Default suite" finished-at="2022-12-07T19:53:43 IST" duration-ms="64156">
     <groups>
     </groups>
-    <test started-at="2022-12-07T13:10:23 IST" name="Default test" finished-at="2022-12-07T13:10:32 IST" duration-ms="8801">
-      <class name="TestTopics.AssertsTopics">
-        <test-method is-config="true" signature="setup()[pri:0, instance:TestTopics.AssertsTopics@6aba2b86]" started-at="2022-12-07T13:10:23 IST" name="setup" finished-at="2022-12-07T13:10:29 IST" duration-ms="6522" status="PASS">
+    <test started-at="2022-12-07T19:52:39 IST" name="Default test" finished-at="2022-12-07T19:53:43 IST" duration-ms="64156">
+      <class name="TestTopics.FramesTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:TestTopics.FramesTest@5e0826e7]" started-at="2022-12-07T19:52:39 IST" name="setup" finished-at="2022-12-07T19:52:42 IST" duration-ms="2953" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="test()[pri:1, instance:TestTopics.AssertsTopics@6aba2b86]" started-at="2022-12-07T13:10:29 IST" name="test" finished-at="2022-12-07T13:10:29 IST" duration-ms="12" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test -->
-        <test-method signature="testForNotEqual()[pri:2, instance:TestTopics.AssertsTopics@6aba2b86]" started-at="2022-12-07T13:10:29 IST" name="testForNotEqual" finished-at="2022-12-07T13:10:29 IST" duration-ms="5" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testForNotEqual -->
-        <test-method signature="testForTrue()[pri:3, instance:TestTopics.AssertsTopics@6aba2b86]" started-at="2022-12-07T13:10:29 IST" name="testForTrue" finished-at="2022-12-07T13:10:29 IST" duration-ms="6" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testForTrue -->
-        <test-method signature="testForFalse()[pri:4, instance:TestTopics.AssertsTopics@6aba2b86]" started-at="2022-12-07T13:10:29 IST" name="testForFalse" finished-at="2022-12-07T13:10:29 IST" duration-ms="17" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testForFalse -->
-        <test-method signature="testForNull()[pri:5, instance:TestTopics.AssertsTopics@6aba2b86]" started-at="2022-12-07T13:10:29 IST" name="testForNull" finished-at="2022-12-07T13:10:29 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testForNull -->
-        <test-method signature="testForNotNull()[pri:6, instance:TestTopics.AssertsTopics@6aba2b86]" started-at="2022-12-07T13:10:29 IST" name="testForNotNull" finished-at="2022-12-07T13:10:29 IST" duration-ms="6" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testForNotNull -->
-        <test-method signature="testForHardAsserts()[pri:7, instance:TestTopics.AssertsTopics@6aba2b86]" started-at="2022-12-07T13:10:29 IST" name="testForHardAsserts" finished-at="2022-12-07T13:10:31 IST" duration-ms="2064" status="FAIL">
-          <exception class="java.lang.AssertionError">
+        <test-method signature="frames()[pri:0, instance:TestTopics.FramesTest@5e0826e7]" started-at="2022-12-07T19:52:42 IST" name="frames" finished-at="2022-12-07T19:53:43 IST" duration-ms="60987" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchFrameException">
             <message>
-              <![CDATA[expected [null] but found [true]]]>
+              <![CDATA[No frame element found by name or id packageFrame
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'DESKTOP-1SGGTFE', ip: '192.168.1.137', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
+Driver info: driver.version: unknown]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [null] but found [true]
-at org.testng.Assert.fail(Assert.java:99)
-at org.testng.Assert.failNotSame(Assert.java:1033)
-at org.testng.Assert.assertNull(Assert.java:965)
-at org.testng.Assert.assertNull(Assert.java:953)
-at TestTopics.AssertsTopics.testForHardAsserts(AssertsTopics.java:87)
+              <![CDATA[org.openqa.selenium.NoSuchFrameException: No frame element found by name or id packageFrame
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'DESKTOP-1SGGTFE', ip: '192.168.1.137', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
+Driver info: driver.version: unknown
+at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.frame(RemoteWebDriver.java:1088)
+at TestTopics.FramesTest.frames(FramesTest.java:43)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 at java.base/java.lang.reflect.Method.invoke(Method.java:578)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
@@ -75,15 +54,15 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- org.openqa.selenium.NoSuchFrameException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testForHardAsserts -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:TestTopics.AssertsTopics@6aba2b86]" started-at="2022-12-07T13:10:31 IST" name="teardown" finished-at="2022-12-07T13:10:32 IST" duration-ms="130" status="PASS">
+        </test-method> <!-- frames -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:TestTopics.FramesTest@5e0826e7]" started-at="2022-12-07T19:53:43 IST" name="teardown" finished-at="2022-12-07T19:53:43 IST" duration-ms="189" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-      </class> <!-- TestTopics.AssertsTopics -->
+      </class> <!-- TestTopics.FramesTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
