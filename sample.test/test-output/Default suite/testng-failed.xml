@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="TestTopics.dynamicPropertiesTest">
+      <class name="TestTopics.AssertsTopics">
         <methods>
-          <include name="setup"/>
-          <include name="testExcute"/>
           <include name="teardown"/>
+          <include name="setup"/>
+          <include name="testForHardAsserts"/>
         </methods>
-      </class> <!-- TestTopics.dynamicPropertiesTest -->
+      </class> <!-- TestTopics.AssertsTopics -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
