@@ -1,15 +1,12 @@
 package TestTopics;
 
 import java.time.Duration;
-import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.List;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
@@ -17,7 +14,7 @@ import org.testng.annotations.Test;
 public class FramesTest {
 
 	static WebDriver driver;
-	static String baseurl = "https://www.selenium.dev/selenium/docs/api/java/overview-summary.html";
+	static String baseurl = "https://demoqa.com/frames";
 
 	@BeforeTest
 	public static void setup() throws InterruptedException {
@@ -31,33 +28,21 @@ public class FramesTest {
 
 	@Test
 	public void frames() {
-		ArrayList<String> lists = new ArrayList<String>();
-		WebElement btnElement = driver.findElement(By.xpath("//a[contains(text(),'Frames')]"));
-		btnElement.click();
 
-		driver.switchTo().frame("packageListFrame");
-		WebElement linkElement = driver
-				.findElement(By.xpath("//a[contains(text(),'org.openqa.selenium.virtualauthenticator')]"));
-		linkElement.click();
+		driver.switchTo().frame("frame1");
+		WebElement firstFrame = driver.findElement(By.id("sampleHeading"));
+		String firstString = firstFrame.getText();
+		System.out.println(firstString);
 
-		driver.switchTo().frame("packageFrame");
-		WebElement linkeElement = driver.findElement(By.xpath("//a[contains(text(),'Credential')]"));
-		linkeElement.click();
-
-		driver.switchTo().frame("classFrame");
-		String excpString = "https://w3c.github.io/webauthn/#credential-parameters";
-		List<WebElement> links = driver.findElements(By.tagName("a"));
-		Iterator<WebElement> iterLinks = links.iterator();
-		while (iterLinks.hasNext()) {
-			String urls = iterLinks.next().getAttribute("href");
-			if (urls.equalsIgnoreCase(excpString)){
-				Assert.assertEquals(excpString,urls);
-				driver.findElement(By.xpath("a[@href="+urls+"]")).click();
-			}
-		}
-
+		driver.switchTo().frame("frame2");
+		WebElement secondFrame = driver.findElement(By.id("sampleHeading"));
+		String secondString = secondFrame.getText();
+		System.out.println(secondString);
+		
+		List<WebElement> frameList = driver.findElements(By.tagName("frames"));
+		System.out.println(frameList.size());
 	}
-
+				
 	@AfterTest
 	public void teardown() {
 		driver.quit();

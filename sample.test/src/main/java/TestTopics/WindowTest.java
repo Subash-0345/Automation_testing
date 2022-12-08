@@ -25,6 +25,7 @@ public class WindowTest {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
 	}
 
+	@SuppressWarnings("static-access")
 	@Test
 	public void newTabTest() throws InterruptedException {
 		WebElement btn = driver.findElement(By.id("tabButton"));
@@ -53,12 +54,12 @@ public class WindowTest {
 			if (!mainWindow.contentEquals(windString)) {
 				driver.switchTo().window(windString).manage().window().maximize();
 				String textString = driver.findElement(By.id("sampleHeading")).getText();
-				System.out.println("The Text is get from new window :"+textString);
+				System.out.println("The Text is get from new window :" + textString);
 				break;
 			}
 		}
 	}
-	
+
 	@AfterTest
 	public void teatDown() {
 		driver.quit();
