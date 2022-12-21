@@ -1,0 +1,4 @@
+2022-12-21 17:42:34,168 WARN  [XmlFileConfigurators] This is warn message 
+2022-12-21 17:42:34,169 INFO  [XmlFileConfigurators] This is a Info message 
+2022-12-21 17:42:34,169 ERROR [XmlFileConfigurators] This is error message 
+2022-12-21 17:42:34,169 FATAL [XmlFileConfigurators] This is a Fatal message 

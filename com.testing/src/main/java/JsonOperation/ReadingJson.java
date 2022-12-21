@@ -12,7 +12,7 @@ import org.json.simple.parser.ParseException;
 public class ReadingJson {
 
 	public static void main(String[] args) throws IOException, ParseException {
-		// TODO Auto-generated method stub
+		
 
 		JSONParser parser = new JSONParser();
 

@@ -1,0 +1,5 @@
+2022-42-21 17:42:50 DEBUG PropertyFileConfigurator:14 - This is debug message
+2022-42-21 17:42:50 WARN  PropertyFileConfigurator:15 - This is warn message
+2022-42-21 17:42:50 INFO  PropertyFileConfigurator:16 - This is a Info message
+2022-42-21 17:42:50 ERROR PropertyFileConfigurator:17 - This is error message
+2022-42-21 17:42:50 FATAL PropertyFileConfigurator:18 - This is a Fatal message
