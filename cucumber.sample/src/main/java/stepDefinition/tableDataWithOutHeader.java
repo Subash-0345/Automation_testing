@@ -7,7 +7,7 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
-public class stepFour {
+public class tableDataWithOutHeader {
 	@Given("enetering the browser.")
 	public void enetering_the_browser() throws Throwable {
 		System.out.println("--------one--------");
@@ -16,7 +16,7 @@ public class stepFour {
 	@When("Username  and enter the password.")
 	public void username_and_enter_the_password_too(DataTable dataTable) throws Throwable {
 		List<List<String>> list = dataTable.asLists(String.class);
-		System.out.println("My first name " + list.get(0) + ". And my initial is " + list.get(1));
+		System.out.println("My first name " + list.get(1) + ". And my initial is " + list.get(2));
 
 	}
 

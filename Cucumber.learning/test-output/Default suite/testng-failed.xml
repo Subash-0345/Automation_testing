@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="StepPackage.dataTableExample2">
+        <methods>
+          <include name="verify_the_page_and_quit"/>
+          <include name="the_user_enter_the_url"/>
+          <include name="the_userenter_username_and_enter_password"/>
+          <include name="user_click_the_login_button"/>
+        </methods>
+      </class> <!-- StepPackage.dataTableExample2 -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
